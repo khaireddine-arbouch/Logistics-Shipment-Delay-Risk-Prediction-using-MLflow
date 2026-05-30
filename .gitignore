@@ -1,0 +1,10 @@
+.venv/
+.env
+mlflow.db
+presentation/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz

@@ -1,0 +1,78 @@
+{
+  "batch": "stable",
+  "batch_path": "C:\\Users\\khair\\Downloads\\Code\\mlops-prj\\data\\monitoring\\batch_stable.csv",
+  "n_rows": 1000,
+  "model_name": "LogisticsDelayRiskModel",
+  "model_version": "1",
+  "metrics": {
+    "batch_size": 1000.0,
+    "positive_prediction_rate": 0.666,
+    "average_delay_probability": 0.666,
+    "numeric_drift_score": 0.33584877929022144,
+    "categorical_drift_score": 0.03950000000000002,
+    "drift_detected": 0.0,
+    "accuracy": 0.924,
+    "precision": 0.9324324324324325,
+    "recall": 0.9524539877300614,
+    "f1": 0.9423368740515933,
+    "roc_auc": 0.9115718214512377
+  },
+  "numeric_threshold": 0.5,
+  "categorical_threshold": 0.2,
+  "drift_detected": false,
+  "top_numeric_drift": [
+    {
+      "feature": "cargo_value_usd",
+      "type": "numeric",
+      "reference_mean": 13727.73122,
+      "batch_mean": 13709.020620000001,
+      "reference_std": 35278.26840811491,
+      "batch_std": 47126.43178845309,
+      "normalized_mean_diff": 0.0005303718363822698,
+      "normalized_std_diff": 0.33584877929022144,
+      "drift_score": 0.33584877929022144
+    },
+    {
+      "feature": "customs_complexity_score",
+      "type": "numeric",
+      "reference_mean": 2.8672011666666672,
+      "batch_mean": 2.75774,
+      "reference_std": 1.5846601254898558,
+      "batch_std": 1.5370758727657652,
+      "normalized_mean_diff": 0.06907548496106074,
+      "normalized_std_diff": 0.03002804952221613,
+      "drift_score": 0.06907548496106074
+    },
+    {
+      "feature": "port_congestion_score",
+      "type": "numeric",
+      "reference_mean": 2.8651083333333336,
+      "batch_mean": 2.955942,
+      "reference_std": 1.6094086663450151,
+      "batch_std": 1.6337790593132997,
+      "normalized_mean_diff": 0.05643915592485936,
+      "normalized_std_diff": 0.015142451682971245,
+      "drift_score": 0.05643915592485936
+    }
+  ],
+  "top_categorical_drift": [
+    {
+      "feature": "origin_region",
+      "type": "categorical",
+      "tvd": 0.03950000000000002,
+      "drift_score": 0.03950000000000002
+    },
+    {
+      "feature": "shipment_priority",
+      "type": "categorical",
+      "tvd": 0.025333333333333354,
+      "drift_score": 0.025333333333333354
+    },
+    {
+      "feature": "destination_region",
+      "type": "categorical",
+      "tvd": 0.020333333333333342,
+      "drift_score": 0.020333333333333342
+    }
+  ]
+}

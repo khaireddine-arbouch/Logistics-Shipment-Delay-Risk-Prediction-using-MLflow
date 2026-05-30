@@ -1,0 +1,90 @@
+{
+  "n_rows": 4800,
+  "columns": {
+    "route_distance_km": {
+      "dtype": "float64",
+      "n_missing": 0,
+      "n_unique": 4608
+    },
+    "planned_transit_days": {
+      "dtype": "float64",
+      "n_missing": 0,
+      "n_unique": 637
+    },
+    "customs_complexity_score": {
+      "dtype": "float64",
+      "n_missing": 0,
+      "n_unique": 3268
+    },
+    "weather_risk_score": {
+      "dtype": "float64",
+      "n_missing": 0,
+      "n_unique": 3403
+    },
+    "historical_route_delay_rate": {
+      "dtype": "float64",
+      "n_missing": 0,
+      "n_unique": 3113
+    },
+    "cargo_value_usd": {
+      "dtype": "float64",
+      "n_missing": 0,
+      "n_unique": 4793
+    },
+    "port_congestion_score": {
+      "dtype": "float64",
+      "n_missing": 0,
+      "n_unique": 3269
+    },
+    "shipment_mode": {
+      "dtype": "object",
+      "n_missing": 0,
+      "n_unique": 4
+    },
+    "carrier_type": {
+      "dtype": "object",
+      "n_missing": 0,
+      "n_unique": 3
+    },
+    "origin_region": {
+      "dtype": "object",
+      "n_missing": 0,
+      "n_unique": 4
+    },
+    "destination_region": {
+      "dtype": "object",
+      "n_missing": 0,
+      "n_unique": 4
+    },
+    "shipment_priority": {
+      "dtype": "object",
+      "n_missing": 0,
+      "n_unique": 4
+    },
+    "is_delayed": {
+      "dtype": "int64",
+      "n_missing": 0,
+      "n_unique": 2
+    }
+  },
+  "target_distribution": {
+    "1": 2903,
+    "0": 1897
+  },
+  "numeric_features": [
+    "route_distance_km",
+    "planned_transit_days",
+    "customs_complexity_score",
+    "weather_risk_score",
+    "historical_route_delay_rate",
+    "cargo_value_usd",
+    "port_congestion_score"
+  ],
+  "categorical_features": [
+    "shipment_mode",
+    "carrier_type",
+    "origin_region",
+    "destination_region",
+    "shipment_priority"
+  ]
+}

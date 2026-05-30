@@ -1,0 +1,13 @@
+{
+  "best_params": {
+    "n_estimators": 350,
+    "learning_rate": 0.043168194937654114,
+    "max_depth": 2,
+    "min_samples_split": 15,
+    "subsample": 0.7760609974958406
+  },
+  "best_cv_metric": 0.9254987309796685,
+  "metric": "f1",
+  "n_trials": 15,
+  "cv_splits": 3
+}
